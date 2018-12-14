@@ -12,9 +12,6 @@ nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
 
-"set tab size and indents"
-filetype plugin indent on
-"show tab with 4 spaces width"
 set tabstop=4
 
 " set the runtime path to include Vundle and initialize
@@ -45,4 +42,4 @@ filetype plugin indent on    " required
 " :PluginClean      - confirms removal of unused plugins; append `!` to auto-approve removal
 "
 " see :h vundle for more details or wiki for FAQ
-" Put your non-Plugin stuff after this line
+"" Put your non-Plugin stuff after this line
