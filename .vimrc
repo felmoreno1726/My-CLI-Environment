@@ -28,6 +28,7 @@ Plugin 'VundleVim/Vundle.vim'
 "Plugin 'junegunn/fzf.vim'
 Plugin 'itchyny/lightline.vim'
 Plugin 'tomasiser/vim-code-dark'
+Plugin 'christoomey/vim-tmux-navigator'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
