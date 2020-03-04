@@ -29,6 +29,10 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'itchyny/lightline.vim'
 Plugin 'tomasiser/vim-code-dark'
 Plugin 'christoomey/vim-tmux-navigator'
+Plugin 'leafgarland/typescript-vim'
+Plugin 'peitalin/vim-jsx-typescript'
+" Then activate typescript highlighter
+autocmd BufNewFile,BufRead *.ts setlocal filetype=typescript
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
