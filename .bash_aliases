@@ -1,3 +1,6 @@
+#Nvidia GPU monitoring
+alias nvidia-watch='watch -d -n 0.5 nvidia-smi'
+
 # some more ls aliases
 alias ll='ls -alF'
 alias la='ls -A'
