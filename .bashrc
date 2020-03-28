@@ -38,10 +38,22 @@ fi
 if tput setaf 1 &> /dev/null; then
 	tput sgr0
 	if [[ $(tput colors) -ge 256 ]] 2>/dev/null; then
-		MAGENTA=$(tput setaf 9)
-		ORANGE=$(tput setaf 172)
-		GREEN=$(tput setaf 190)
+		BLACK=$(tput setaf 0)
+		MAROON=$(tput setaf 1)
+		GREEN=$(tput setaf 2)
+		BLUE=$(tput setaf 4)
+		PURPLE=$(tput setaf 5)
+		CYAN=$(tput setaf 6)
+		WHITE=$(tput setaf 7)
+		GRAY=$(tput setaf 8)
+		RED=$(tput setaf 9)
+		LIGHT_GREEN=$(tput setaf 10)
+		YELLOW=$(tput setaf 190)
+		MAGENTA=$(tput setaf 13)
+		SKY_BLUE=$(tput setaf 14)
+		ORANGE=$(tput setaf 208)
 		PURPLE=$(tput setaf 141)
+
 	else
 		MAGENTA=$(tput setaf 5)
 		ORANGE=$(tput setaf 4)
@@ -65,6 +77,11 @@ export GREEN
 export PURPLE
 export BOLD
 export RESET
+export YELLOW
+
+case "$TERM" in 
+		xterm-color|*256color|screen) interactive_prompt=yes;;
+esac
 
 # Git branch details
 function parse_git_dirty() {
@@ -76,10 +93,13 @@ function parse_git_branch() {
 
 # Change this symbol to something sweet.
 # (http://en.wikipedia.org/wiki/Unicode_symbols)
-symbol="⚡ "
+#symbol="⚡ "
+#symbol="\[$YELLOW\]☮ "
+symbol="☠ "
+#symbol="\[$YELLOW\]☣ " 
 
-export PS1="\[${MAGENTA}\]\u@\h \[$RESET\]in \[$GREEN\]\w\[$RESET\]\$([[ -n \$(git branch 2> /dev/null) ]] && echo \" on \")\[$PURPLE\]\$(parse_git_branch)\[$RESET\]\n$symbol\[$RESET\]"
-export PS2="\[$ORANGE\]→ \[$RESET\]"
+export PS1="\[${RED}\]\u@\h\[$RESET\]:\[$YELLOW\]\w\[$RESET\]\$([[ -n \$(git branch 2> /dev/null) ]] && echo \" on \")\[$PURPLE\]\$(parse_git_branch)\[$RESET\]\n$symbol\[$RESET\]"
+#export PS2="\[$ORANGE\]→ \[$RESET\]"
 
 # Alias definitions.
 # You may want to put all your additions into a separate file like
