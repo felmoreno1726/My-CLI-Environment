@@ -1,3 +1,6 @@
+#Common ssh operations
+alias ssh-start='eval `ssh-agent -s`'
+
 #Nvidia GPU monitoring
 alias nvidia-watch='watch -d -n 0.5 nvidia-smi'
 
