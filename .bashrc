@@ -95,7 +95,7 @@ function parse_git_branch() {
 # (http://en.wikipedia.org/wiki/Unicode_symbols)
 #symbol="⚡ "
 #symbol="\[$YELLOW\]☮ "
-symbol="☠ "
+symbol="☠  "
 #symbol="\[$YELLOW\]☣ " 
 
 export PS1="\[${RED}\]\u@\h\[$RESET\]:\[$YELLOW\]\w\[$RESET\]\$([[ -n \$(git branch 2> /dev/null) ]] && echo \" on \")\[$PURPLE\]\$(parse_git_branch)\[$RESET\]\n$symbol\[$RESET\]"
