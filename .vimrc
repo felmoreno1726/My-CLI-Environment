@@ -32,6 +32,7 @@ Plugin 'christoomey/vim-tmux-navigator'
 Plugin 'leafgarland/typescript-vim'
 Plugin 'peitalin/vim-jsx-typescript'
 Plugin 'sudar/comments.vim'
+Plugin 'kiteco/vim-plugin'
 
 
 " Then activate typescript highlighter
