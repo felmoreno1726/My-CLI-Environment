@@ -12,6 +12,10 @@ nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
 
+" Add commads to paste and copy from clipboard
+noremap <C-Y> "+y
+noremap <C-P> "+p
+
 set tabstop=4
 
 " set the runtime path to include Vundle and initialize
