@@ -119,7 +119,8 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
-### Misc
 
-# Only show the current directory's name in the tab
-#export PROMPT_COMMAND='echo -ne "\033]0;${PWD##*/}\007"'
+# enable git completion
+if [ -f ~/.git-completion.bash ]; then
+  . ~/.git-completion.bash
+fi
