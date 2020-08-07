@@ -9,12 +9,12 @@ Setup:
 ### vim_profile
 Setup:  
  Clone this repo. Move files to the home directory.  
- git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim  
+ ` git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim  `   
  Install plugins: -Launch vim and run :PluginInstall  
                   -To install from command line: vim +PluginInstall +qall  
 
 #### vim autocomplete with Kite
-` bash -c "$(wget -q -O - https://linux.kite.com/dls/linux/current)" `
+` bash -c "$(wget -q -O - https://linux.kite.com/dls/linux/current)" `   
 
 #### git autocomplete (if not pre-installed)
 Use this for Arch based distributions  
