@@ -1,5 +1,5 @@
 #Common paths
-alias classes='cd ~/Dropbox\ \(MIT\)/MIT/2020/Spring/'
+alias classes='cd ~/Dropbox\ \(MIT\)/MIT/2020/Fall/'
 
 #Common ssh operations
 alias ssh-start='eval `ssh-agent -s`'
