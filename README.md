@@ -4,8 +4,8 @@
 An all purpose setup for bash to use across my machines.  
 
 Setup:  
-Move profile and configuration scripts to your home directory .bashrc (if UNIX based shell) and .bash_profile (if MAC shell or other terminal emulator).  
-`cp .bashrc ~` 
+Move profile and configuration scripts to your home directory.  
+`cp .bashrc ~` (for UNIX based shell) or `cp .bash_profile ~` (for MAC shell or other terminal emulators)   
 `cp .bash_aliases ~`  
 `cp .vimrc ~`  
 `cp .tmux.conf ~`  
