@@ -1,19 +1,23 @@
 # Command line environment for general development
 
-### bash_profile
+### profile
 An all purpose setup for bash to use across my machines.  
 
 Setup:  
- Move .bashrc (if UNIX based shell) or .bash_profile (if MAC shell or other terminal emulator) and .bash_aliases to the home directory.  
+Move profile and configuration scripts to your home directory .bashrc (if UNIX based shell) and .bash_profile (if MAC shell or other terminal emulator).  
+`cp .bashrc ~` 
+`cp .bash_aliases ~`  
+`cp .vimrc ~`  
+`cp .tmux.conf ~`  
 
-### vim_profile
+### VIM Plugins
 Setup:  
  Clone this repo. Move files to the home directory.  
  ` git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim  `   
  Install plugins: -Launch vim and run :PluginInstall  
                   -To install from command line: vim +PluginInstall +qall  
 
-#### vim autocomplete with Kite
+#### Code autocompletion with Kite
 ` bash -c "$(wget -q -O - https://linux.kite.com/dls/linux/current)" `   
 
 #### git autocomplete (if not pre-installed)
