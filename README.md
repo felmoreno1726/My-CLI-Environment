@@ -20,6 +20,9 @@ Setup:
 #### Code autocompletion with Kite
 ` bash -c "$(wget -q -O - https://linux.kite.com/dls/linux/current)" `   
 
-#### git autocomplete (if not pre-installed)
+#### git 
+###### default editor (VIM)
+` git config --global core.editor "vim" `  
+###### autocomplete (if not pre-installed)
 Use this for Arch based distributions  
 `curl https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash -o ~/.git-completion.bash`
