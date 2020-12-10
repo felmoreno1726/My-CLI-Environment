@@ -3,10 +3,7 @@
 # for examples
 
 # If not running interactively, don't do anything
-case $- in
-    *i*) ;;
-      *) return;;
-esac
+[[ $- != *i* ]] && return
 
 # don't put duplicate lines or lines starting with space in the history.
 # See bash(1) for more options
@@ -108,6 +105,9 @@ export PS1="\[${RED}\]\u@\h\[$RESET\]:\[$YELLOW\]\w\[$RESET\]\$([[ -n \$(git bra
 if [ -f ~/.bash_aliases ]; then
     . ~/.bash_aliases
 fi
+
+# Bash utils command definitions
+[ -f ~/.bash_utils ] && . ~/.bash_utils
 
 # enable programmable completion features (you don't need to enable
 # this, if it's already enabled in /etc/bash.bashrc and /etc/profile
