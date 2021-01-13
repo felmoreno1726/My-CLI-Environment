@@ -10,8 +10,9 @@ Move profile and configuration scripts to your home directory.
 `cp .vimrc ~`  
 `cp .tmux.conf ~`  
 
-### VIM Plugins
+### VIM 
 Setup:  
+ Install gvim as the system clipboard and other features depend on it.
  Clone this repo. Move files to the home directory.  
  ` git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim  `   
  Install plugins: -Launch vim and run :PluginInstall  
