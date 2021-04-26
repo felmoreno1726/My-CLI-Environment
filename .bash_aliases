@@ -7,6 +7,9 @@ alias ssh-start='eval `ssh-agent -s`'
 #Nvidia GPU monitoring
 alias nvidia-watch='watch -d -n 0.5 nvidia-smi'
 
+#Restart clock
+alias restart-clock='sudo hwclock --hctosys'
+
 # some more ls aliases
 alias ll='ls -alF'
 alias la='ls -A'
