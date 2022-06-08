@@ -4,6 +4,9 @@ alias classes='cd ~/Dropbox\ \(MIT\)/MIT/2020/Fall/'
 #Common ssh operations
 alias ssh-start='eval `ssh-agent -s`'
 
+# Display markdown funciton/command
+function markdown { pandoc $1 | lynx -stdin ;}
+
 #Nvidia GPU monitoring
 alias nvidia-watch='watch -d -n 0.5 nvidia-smi'
 

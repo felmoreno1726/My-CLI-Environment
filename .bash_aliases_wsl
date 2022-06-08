@@ -1,0 +1,6 @@
+### FOR WSL USAGE ###
+alias firefox-win='/mnt/c/Program\ Files/Mozilla\ Firefox/firefox.exe'
+# include MS Office executables to PATH
+export ms_office_path="/mnt/c/Program\ Files/Microsoft\ Office/root/Office16/"
+alias excel="$ms_office_path/EXCEL.EXE"
+#####################
