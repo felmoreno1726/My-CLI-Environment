@@ -4,7 +4,6 @@ set number
 "set background=dark
 filetype off                  " required
 syntax on
-colorscheme codedark
 
 " Add split navigation functionality
 nnoremap <C-J> <C-W><C-J>
@@ -37,7 +36,6 @@ Plugin 'christoomey/vim-tmux-navigator'
 Plugin 'leafgarland/typescript-vim'
 Plugin 'peitalin/vim-jsx-typescript'
 Plugin 'sudar/comments.vim'
-Plugin 'kiteco/vim-plugin'
 
 
 " Then activate typescript highlighter
@@ -45,6 +43,9 @@ autocmd BufNewFile,BufRead *.ts setlocal filetype=typescript
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
+
+" IMPORTANT  MUST BE AFTER  vundle#end()
+colorscheme codedark
 filetype plugin indent on    " required
 " To ignore plugin indent changes, instead use:
 "filetype plugin on
