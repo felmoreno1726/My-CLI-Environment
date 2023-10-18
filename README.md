@@ -3,6 +3,9 @@
 ### profile
 An all purpose setup for bash to use across my machines.  
 
+Use vim clone recursive as this repository contains submodules
+` git clone --recursive <path-to-this>`
+
 Setup:  
 Move profile and configuration scripts to your home directory.  
 `cp .bashrc ~` (for UNIX based shell) or `cp .bash_profile ~` (for MAC shell or other terminal emulators)   
