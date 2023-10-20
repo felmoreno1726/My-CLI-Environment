@@ -11,7 +11,15 @@ Move profile and configuration scripts to your home directory.
 `cp .bashrc ~` (for UNIX based shell) or `cp .bash_profile ~` (for MAC shell or other terminal emulators)   
 `cp .bash_aliases ~`  
 `cp .vimrc ~`  
+
+
+### TMUX
+Clone TPM (Tmux Plugin Manager) for all of the juicy plugins.  
+
+` git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm `  
+Then copy configuration  
 `cp .tmux.conf ~`  
+And to reload configurations in a TMUX session use: ` Ctrl-B + I `
 
 ### VIM 
 Setup:  
